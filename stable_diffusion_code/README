@@ -13,6 +13,7 @@ Step 2: Create a file that contains the commands for calling stable diffusion mo
 Run 'generate_runner_scripts.ipynb' in this folder to generate 'command_list.txt'
 Copy command in 'command_list.txt' to the the PowerShell and create the 'tile_image_generator.ps1' (already attached)
 Run 'tile_image_generator.ps1'
+(since my GPU is installed on a Windows PC, so if you have a Linux machine, you may need to create a .bash file based on 'command_list.txt')
 
 Step 3: Push all generated synthetic tile images to Github
 
