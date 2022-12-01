@@ -1,0 +1,19 @@
+Instructions of running code for COMP572 Final Project
+Author: Zhidi Zhang
+
+Step 1: Set up the virtual environment for stable diffusion model
+
+1. git clone https://github.com/CompVis/stable-diffusion.git
+2. cd stable-diffusion/
+3. conda env create -f environment.yaml
+4. conda activate ldm
+5. curl https://f004.backblazeb2.com/file/aai-blog-files/sd-v1-4.ckpt > sd-v1-4.ckpt
+
+Step 2: Create a file that contains the commands for calling stable diffusion model to generate synthetic images
+Run 'generate_runner_scripts.ipynb' in this folder to generate 'command_list.txt'
+Copy command in 'command_list.txt' to the the PowerShell and create the 'tile_image_generator.ps1' (already attached)
+Run 'tile_image_generator.ps1'
+
+Step 3: Push all generated synthetic tile images to Github
+
+Step 4: Run matlab code to generate photo mosaic
